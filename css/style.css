@@ -1,7 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 p {
-    color: green;
+  color: green;
 }
 
 .name {
-    color: blue;
+  color: blue;
 }

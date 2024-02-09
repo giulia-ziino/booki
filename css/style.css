@@ -5,12 +5,227 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  font-family: Raleway, sans-serif;
 }
 
-p {
-  color: green;
+/* header */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  padding-left: 1000px;
+  text-align: center;
+}
+header img {
+  max-width: 80px;
+  max-height: 40px;
+  margin-left: 20px;
+}
+header p {
+  width: 150px;
+  height: 80px;
+  text-align: center;
+}
+header a {
+  color: black;
+  text-decoration: none;
+  border-top: 2px solid transparent;
+  margin-top: 0px;
+  padding-top: 20px;
 }
 
-.name {
-  color: blue;
+header a:hover {
+  color: #0165fc;
+  border-top: 2px solid #0165fc;
+}
+
+/*h1*/
+#title {
+  font-size: 24;
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+/* subtitle */
+#subtitle p {
+  text-indent: 20px;
+  font-weight: 200;
+  font-size: 16;
+}
+
+/* location */
+#location,
+#location div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+}
+#location i {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  width: 50px;
+  height: 60px;
+  border: 1px solid #f2f2f2;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: #f2f2f2;
+}
+#location p {
+  display: flex;
+  align-items: center;
+  text-indent: 20px;
+  height: 60px;
+  width: 250px;
+  font-weight: 600;
+  border: 1px solid #f2f2f2;
+}
+#search {
+  display: flex;
+  align-items: center;
+  padding-inline-end: 10px;
+  width: auto;
+  height: 60px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #0165fc;
+  font-weight: 600;
+  color: white;
+}
+
+/* filters */
+#filters,
+#filters div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding-left: 20px;
+}
+#filters p i {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #ddebff;
+}
+#filters p {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 50px;
+  border: 2px solid #f2f2f2;
+  border-radius: 40px;
+  font-weight: 600;
+  padding-inline-end: 10px;
+}
+#filters h2 {
+  font-size: 20;
+  padding: 4px;
+  font-weight: 600;
+}
+
+/* quanity */
+#quantity div {
+  display: flex;
+  flex-direction: row;
+}
+#quantity p {
+  font-weight: 200;
+  max-width: 420px;
+  padding-left: 20px;
+}
+#quantity i {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #f2f2f2;
+  border-radius: 100%;
+}
+
+/* main */
+#main section{
+  display: flex;
+  flex-direction: row;
+}
+#accomodations {
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  max-width: 800px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  padding: 30px;
+}
+#accomodations h1 {
+  font-size: 24;
+  font-weight: 600;
+}
+#listings {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  justify-content:space-between;
+  margin-bottom: 40px;
+}
+article {
+  background-color: white;
+  border-radius: 20px;
+  min-width: 230px;
+  box-shadow: 0 0 5px #ddebff;
+  display: flex;
+  flex-direction: column;
+}
+#hotel_listing img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  min-width: 195px;
+  max-height: 130px;
+  padding: 5px;
+  object-fit: cover;
+}
+#hotel_listing h1 {
+  font-size: 14;
+  max-width: 200px;
+  padding-left: 15px;
+  line-height: 2px;
+}
+#hotel_listing p {
+  font-size: 12;
+  font-weight: 300;
+  padding-left: 15px;
+  line-height: 2px;
+}
+.bold {
+  font-weight: 600;
+}
+
+/* most popular */
+#most_popular {
+  display: flex;
+  flex-direction: row;
+}
+
+/* footer */
+footer {
+  display: flex;
+}
+footer div {
+  width: 110%;
+  background-color: #f2f2f2;
+}
+footer h2 {
+  font-weight: 600;
+  font-size: 18;
+  text-indent: 40px;
+}
+footer li {
+  line-height: 40px;
+  font-weight: 200;
+  list-style: none;
 }

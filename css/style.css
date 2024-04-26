@@ -1,9 +1,8 @@
 html {
   box-sizing: border-box;
 }
-*,
-*:before,
-*:after {
+*
+ {
   box-sizing: inherit;
   font-family: Raleway, sans-serif;
 }
@@ -13,12 +12,12 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 header nav {
   display: flex;
   flex-direction: row;
   height: 40px;
-  padding-left: 1000px;
   text-align: center;
 }
 header img {
@@ -40,8 +39,8 @@ header a {
 }
 
 header a:hover {
-  color: #0165fc;
-  border-top: 2px solid #0165fc;
+  color: #0065FC;
+  border-top: 2px solid #0065FC;
 }
 
 /*h1*/
@@ -94,7 +93,7 @@ header a:hover {
   height: 60px;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
-  background-color: #0165fc;
+  background-color: #0065FC;
   font-weight: 600;
   color: white;
 }
@@ -111,6 +110,7 @@ header a:hover {
 #filters p i {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 50px;
   height: 50px;
   border-radius: 100%;
@@ -131,6 +131,9 @@ header a:hover {
   padding: 4px;
   font-weight: 600;
 }
+.icon-filter {
+  color: #0065FC;
+}
 
 /* quanity */
 #quantity div {
@@ -147,17 +150,24 @@ header a:hover {
   height: 25px;
   border: 1px solid #f2f2f2;
   border-radius: 100%;
+  align-items: center;
+  text-align: center;
+}
+.icon-info {
+  color: #0065FC;
 }
 
-/* main */
-#main section{
+/* accomodation-section */
+#accomodations-section{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
+/*accomodations*/
 #accomodations {
   border-radius: 20px;
   background-color: #f2f2f2;
-  max-width: 800px;
+  width: 68%;
   margin-left: 20px;
   margin-bottom: 30px;
   padding: 30px;
@@ -173,10 +183,10 @@ header a:hover {
   justify-content:space-between;
   margin-bottom: 40px;
 }
-article {
+#listings article {
   background-color: white;
   border-radius: 20px;
-  min-width: 230px;
+  width: 30%;
   box-shadow: 0 0 5px #ddebff;
   display: flex;
   flex-direction: column;
@@ -204,19 +214,117 @@ article {
 .bold {
   font-weight: 600;
 }
+.fa-active {
+  color: #0065FC;
+}
+.fa-inactive {
+  color: #c9caca;
+}
 
 /* most popular */
 #most_popular {
+  width: 26%;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#most_popular article {
+display: flex;
+flex-direction: row;
+background-color: white;
+border-radius: 20px;
+box-shadow: 0 0 5px #ddebff;
+height: 25%;
+}
+#popular-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#popular_hotel img {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 40%;
+  padding: 5px;
+  object-fit: cover;
+}
+#popular_hotel h1{
+  font-size: 14;
+  padding-left: 15px;
+}
+#popular_hotel  p{
+  font-size: 12;
+  font-weight: 300;
+  padding-left: 15px;
+}
+#popular h1{
+  display: flex;
+  justify-content: space-between;
+  font-size: 24;
+}
+
+/*activities*/
+#activities-city {
+  width: 100%;
+}
+#activities-city h1{
+  padding-left: 20px;
+}
+#activities {
   display: flex;
   flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px;
+}
+.activity-column {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  gap: 10px;
+}
+.activity {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 5px #ddebff;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1
+}
+.activity-large{
+  height: 60%;
+}
+.activity-small {
+  height: 40%;
+}
+.activity img  {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+}
+.activity h1 {
+  font-size: 14;
+  max-width: 200px;
+  padding-left: 15px;
+  line-height: 2px;
 }
 
 /* footer */
 footer {
+ width:100%;
   display: flex;
 }
 footer div {
-  width: 110%;
+  width: 100%;
   background-color: #f2f2f2;
 }
 footer h2 {
@@ -228,4 +336,17 @@ footer li {
   line-height: 40px;
   font-weight: 200;
   list-style: none;
+}
+
+
+@media screen and (max-width: 992px) {
+  
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*header mobile*/
+  display: flex;
+  flex-direction: column;
+  }
 }
